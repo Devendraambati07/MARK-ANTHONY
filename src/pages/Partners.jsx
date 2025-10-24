@@ -1,0 +1,54 @@
+import React from "react";
+import image1 from "../assets/Mask-group.webp";
+import image2 from "../assets/Mask-group-1.webp";
+import image3 from "../assets/Mask-group-2.webp";
+import image4 from "../assets/Mask-group-3.webp";
+import image5 from "../assets/Mask-group-4.webp";
+import image6 from "../assets/Adarsh.webp";
+import image7 from "../assets/Lodha.webp";
+import image8 from "../assets/Sowparnika.webp";
+import bg from "../assets/Bg-2.webp";
+
+const Partners = () => {
+  const Images = [
+    { id: 1, image: image1 },
+    { id: 2, image: image2 },
+    { id: 3, image: image3 },
+    { id: 4, image: image4 },
+    { id: 5, image: image5 },
+    { id: 6, image: image6 },
+    { id: 7, image: image7 },
+    { id: 8, image: image8 },
+  ];
+
+  return (
+    <section id="partners" className="w-full flex flex-col items-center py-10 space-y-8 px-4" style={{backgroundImage:`url(${bg})`,backgroundSize: "cover", backgroundPosition:'center', width:"100%", height:"auto"}}>
+      {/* Header Section */}
+      <div className="max-w-5xl text-center space-y-4">
+        <h1 className="text-xl md:text-4xl text-[#FFCA66] font-semibold Abril">
+          PARTNERS
+        </h1>
+        <p className="text-base md:text-lg text-white">
+          Built on Professionalism, Accountability, and Collaboration, we take pride in operating with integrity and precision—ensuring every partnership creates measurable value and mutual growth.
+        </p>
+        <p className="text-base md:text-lg text-white">
+          We don't just execute sales we build long-term partnerships founded on trust, performance, and a shared vision of success.
+        </p>
+      </div>
+
+      {/* Partners Logos */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mt-6">
+        {Images.map((item) => (
+          <img
+            key={item.id}
+            src={item.image}
+            alt={`Partner ${item.id}`}
+            className="w-28 h-28 object-contain rounded-xl hover:scale-110 transition-transform duration-300"
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Partners;

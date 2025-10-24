@@ -1,0 +1,49 @@
+:root {
+  font-family: "Playfair Display", serif;
+    font-weight: 400;
+  font-style: normal;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  background-color: #1D1D1D;
+  color: #fff;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.Montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Abril{
+  font-family: "Abril Fatface";
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url("https://db.onlinewebfonts.com/c/61645c56830cd483ad31402c34d994c7?family=Exodus");
+
+.Exodus {
+  font-family: "Exodus", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
