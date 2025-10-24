@@ -1,7 +1,7 @@
 // App.js or Layout.jsx
 import React from "react";
 import Navbar from "./components/Navbar";
-import Banner from "./pages/banner";
+import Banner from "./pages/Banner";
 import About from "./pages/About";
 import Ourculture from "./pages/Ourculture";
 import "./App.css"
