@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Logo from "../assets/Logo.webp"
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("Home");
 
   const menuItems = [
-    { name: "Home", link: "#home" },
-    { name: "About Us", link: "#about-us" },
-    { name: "Our culture", link: "#ourculture" },
-    { name: "Partners", link: "#partners" },
-    { name: "Properties", link:"#properties"},
-    { name: "Join The Squad", link: "#joinTheSquad" },
-    { name: "Contact", link: "#contact" },
+    { name: "HOME", link: "#home" },
+    { name: "ABOUT US", link: "#about-us" },
+    { name: "OUR CULTURE", link: "#ourculture" },
+    { name: "PARTNERS", link: "#partners" },
+    { name: "PROPERTIES", link:"#properties"},
+    { name: "JOIN THE SQUAD", link: "#joinTheSquad" },
   ];
 
   const handleScroll = (e, link) => {
@@ -50,9 +50,7 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-[#1D1D1D] max-w-[1440px] mx-auto fixed top-0 z-50 shadow-lg">
       <div className="flex items-center justify-between px-6 md:px-12 py-3">
-        <a href="/" className="text-xl font-bold text-[#FFCA66] tracking-wide Abril">
-          Mark Anthony Ventures
-        </a>
+        <img src={Logo} alt="Mark Anthony" className="w-16 h-12" />
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-8">
@@ -62,13 +60,13 @@ const Navbar = () => {
                 <a
                   href={item.link}
                   onClick={(e) => handleScroll(e, item.link)}
-                  className={`text-sm font-normal font-Exodus relative transition-all duration-500 pb-1 Abril
+                  className={`text-sm font-normal tracking-[2.25px] font-Exodus relative transition-all duration-500 pb-1 Abril
                     ${
                       activeSection === item.link.slice(1)
                         ? "text-white after:w-full"
                         : "text-[#FFCA66] hover:text-white after:w-0"
                     }
-                    after:absolute after:left-0 after:-bottom-[2px] after:h-[2px] after:bg-[#FFCA66] after:transition-all after:duration-500
+                    after:absolute  after:left-0 after:-bottom-[2px] after:h-[2px] after:bg-[#FFCA66] after:transition-all after:duration-500
                   `}
                 >
                   {item.name}

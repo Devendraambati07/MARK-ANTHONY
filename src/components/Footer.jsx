@@ -1,99 +1,83 @@
-import React, { useState } from "react";
-import { TiSocialLinkedin } from "react-icons/ti";
-import { FaInstagram , FaFacebookF } from "react-icons/fa";
-import { FaYoutube, FaXTwitter  } from "react-icons/fa6";
-import axios from "axios";
+import React from "react";
+import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/fa";
 
+const ExpressInterest = () => {
+  return (
+    <div className="bg-black text-white py-16 px-12  flex flex-col md:flex-row justify-between items-start md:items-center">
+      {/* Left Side */}
+      <div className="md:w-1/2 space-y-6 tracking-[2.25px]">
+        <div>
+          <h2 className="text-[#FFCA66] tracking-[3px]  text-start text-3xl font-serif leading-snug">
+            EXPRESS <br /> YOUR <br /> INTEREST
+          </h2>
+        </div>
+        <div className="tracking-[2.25px]">
+          <p className="text-sm text-start uppercase font-light">
+            Our Address
+          </p>
+          <p className="text-xs leading-relaxed mt-2 text-start text-gray-300">
+            5th floor 304, Oxford Chambers, near Manipal Hospital Internal Road,
+            Murgeshpalya, Bengaluru, Karnataka 560017
+          </p>
+        </div>
+<div className="flex space-x-4 gap-2 mt-6 text-[#FFCA66]">
+  {[
+    { Icon: FaFacebookF },
+    { Icon: FaInstagram },
+    { Icon: FaYoutube },
+    { Icon: FaLinkedinIn },
+  ].map(({ Icon }, index) => (
+    <div
+      key={index}
+      className="border-2 border-[#FFCA66] rounded-full w-8 h-8 flex items-center justify-center cursor-pointer hover:bg-[#FFCA66] hover:text-black transition duration-300"
+    >
+      <Icon className="w-4 h-4 " />
+    </div>
+  ))}
+</div>
 
+      </div>
 
-const Footer =()=>{
-    const [formData, setFormData]=useState({
-        name:"",
-        phone:"",
-        email:"",
-    });
+      {/* Right Side */}
+      <div className="md:w-1/2 mt-10 md:mt-0 md:pl-16 w-full">
+        <form className="space-y-6 tracking-[1px]">
+          <div >
+            <label className="block text-sm text-[#FFCA66] text-start mb-2">
+              Full Name*
+            </label>
+            <input
+              type="text"
+              className="w-full bg-transparent border-b border-[#FFCA66] focus:outline-none text-white py-2"
+            />
+          </div>
+          <div>
+            <label className="block text-sm text-start text-[#FFCA66] mb-2">
+              Phone Number
+            </label>
+            <input
+              type="text"
+              className="w-full bg-transparent border-b border-[#FFCA66] focus:outline-none text-white py-2"
+            />
+          </div>
+          <div>
+            <label className="block text-sm text-start text-[#FFCA66] mb-2">
+              Email Address*
+            </label>
+            <input
+              type="email"
+              className="w-full bg-transparent border-b border-[#FFCA66] focus:outline-none text-white py-2"
+            />
+          </div>
+          <button
+            type="submit"
+            className="border border-[#FFCA66] text-[#FFCA66] px-6 py-2 mt-4 hover:bg-[#FFCA66] hover:text-black transition duration-300 tracking-[3px]"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+};
 
-    const [loading , setLoading] = useState(false);
-    const [success , setSuccess] = useState("");
-    
-    const handleChange =(e)=>{
-        setFormData({...formData, [e.target.name]: e.target.value});
-    }
-
-    const handleSubmit = async(e)=>{
-        e.preventDefault();
-        setLoading(true);
-        setSuccess("");
-
-        try{
-            const response = await axios.post("",formData);
-            setSuccess("Form submitted successfully!");
-            setFormData({name:"",phone:"",email:""});
-        }catch(error){
-                  console.error(error);
-      setSuccess("Failed to submit form. Try again.");
-
-        }finally{
-            setLoading(false);
-        }
-
-    };
-
-    return(
-        <footer id="contact" className="bg-[#000000] py-5 px-4 md:px-12">
-            <p className="font-normal text-lg md:text-3xl text-start text-[#FFCA66] Abril">EXPRESS YOUR INTEREST</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full  ">
-                    <div className="w-full md:order-2">
-                    <from className="flex flex-col gap-4 max-w-md mx-auto" onSubmit={handleSubmit}>
-                        <input  
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        placeholder="Full Name"
-                        className=" border-b border-[#FFCA66] text-white py-2 px-1 focus:outline-none"
-                        required />
-                        <input 
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        placeholder="Enter Email"
-                        className=" border-b border-[#FFCA66] text-white py-2 px-1 focus:outline-none"
-                        required />
-                        <input
-                        type="number"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        placeholder="Enter Phone Number"
-                        className="border-b border-[#FFCA66] text-white py-2 px-1 focus:outline-none"
-                        required />
-                        <button
-                        type="submit"
-                        className="border border-[#FFCA66] text-[#FFCA66] py-2 px-6 mt-4 hover:bg-[#FFCA66] hover:text-black transition"
-                        disabled={loading}>
-                        {loading ? "Submitting..." : "Submit"}
-                        </button>
-                        {success && <p className="text-green-500 mt-2">{success}</p>}
-                    </from>
-
-                </div>
-                <div className="grid justify-items-start md:order-1">
-                    <p className="font-bold text-lg ms:text-2xl mt-8 Abril">Our Address</p>
-                    <p className="font-bold text-base ms:text-xl text-start">5th floor 304, Oxford Chambers, near Manipal Hospital Internal Road, Murugeshpalya, Bengaluru, Karnataka 560017</p>
-                    <div className="grid grid-flow-col gap-3">
-                        <TiSocialLinkedin  className="border rounded-full p-1 h-8 w-8"/>
-                        <FaInstagram className="border rounded-full p-1 h-8 w-8"/>
-                        <FaFacebookF className="border rounded-full p-1 h-8 w-8" />
-                        <FaYoutube className="border rounded-full p-1 h-8 w-8"/>
-                        <FaXTwitter className="border rounded-full p-1 h-8 w-8"/>
-                    </div>
-                </div>
-
-            </div>
-        </footer>
-    )
-}
-
-export default Footer;
+export default ExpressInterest;

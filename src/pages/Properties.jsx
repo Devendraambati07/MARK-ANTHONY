@@ -29,9 +29,9 @@ const Properties = () => {
   ];
 
   return (
-    <section id="properties" className="w-full  text-white py-20 overflow-hidden p-4">
+    <section id="properties" className="w-full h-auto md:min-h-screen 2xl:min-h-0 bg-[#1d1d1d] text-white py-20 overflow-hidden p-4">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-xl md:text-4xl font-bold text-center text-[#FFCA66] mb-8 tracking-wide Abril">
+        <h2 className="text-xl md:text-4xl tracking-widest font-bold text-center text-[#FFCA66] mb-8  Abril">
         PROPERTIES WE WORK
         </h2>
 
@@ -43,11 +43,11 @@ const Properties = () => {
                 <img
                   src={property.image}
                   alt={property.title}
-                  className="w-full h-72 border border-[#FFCA66]/20 object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                  className="w-full h-[200px] md:h-[350px] border border-[#FFCA66]/20 object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 />
                 </div>
                 <div className="  flex flex-col justify-end p-6">
-                  <h3 className="text-lg md:text-2xl font-semibold text-white mb-1">{property.title}</h3>
+                  <h3 className="text-lg md:text-2xl font-semibold text-white mb-1 tracking-[1px]">{property.title}</h3>
                 </div>
               </div>
             </div>

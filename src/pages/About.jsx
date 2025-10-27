@@ -1,31 +1,60 @@
 import React from "react";
-import img from "../assets/burj.webp"
+import img from "../assets/burj.webp";
 
 const About = () => {
-
   return (
     <div
-       id="about-us"
-      className="h-auto z-20 px-4 py-14 font-exodus w-full flex flex-col justify-center items-center text-white relative md:p-12"
-      style={{ position: "relative", overflow: "hidden" }}
+      id="about-us"
+      className=" h-auto md:min-h-screen 2xl:min-h-0 bg-[#1d1d1d] z-20 px-6 py-14 font-exodus w-full flex flex-col justify-center items-center text-white relative md:px-12"
+      style={{ overflow: "hidden" }}
     >
-      <div className="z-10 grid justify-center items-center  w-full">
-        <h1 className="text-xl md:text-4xl font-bold pb-8 text-[#FFCA66] Abril ">ABOUT US</h1>
-        <p className="text-sm md:text-xl mb-2 md:max-w-5xl" >We are Mark Anthony - a dedicated real estate advisory firm with deep expertise in bangalore marketand an expanding footprint in Pune and Dubai</p>
+      {/* Heading Section */}
+      <div className="z-10 text-center w-full">
+        <h1 className="text-2xl md:text-4xl font-bold pb-6 text-[#FFCA66] Abril tracking-[6px]">
+          ABOUT US
+        </h1>
+        <p className="text-sm md:text-lg mb-4 max-w-4xl mx-auto">
+          We are <span className="text-[#FFCA66] font-semibold">Mark Anthony</span> — 
+          a dedicated real estate advisory firm with deep expertise in the 
+          Bangalore market and an expanding footprint in Pune and Dubai.
+        </p>
       </div>
-     <div className="z-10 grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center md:max-w-4xl">
-            <p className="text-base md:text-4xl ">Our Foundation Rests on three ‘T’ Principles</p>
-            <div className=" space-y-3">
-                <p className="flex flex-row gap-2 text-base "><img src={img} alt="" className="w-6 h-6"/> 01 Trust</p>
-                <p className="text-sm Montserrat  ">We build lasting relationship by keeping our Promises and delivering consistent results</p>
-                <p className="flex flex-row gap-2"><img src={img} alt="" className="w-6 h-6"/> 02 Transparancy</p>
-                <p className="text-sm Montserrat">Every Step, Every Detail - Clear , Open and honest Communication is at the heart</p>
-                <p className="flex flex-row gap-2"><img src={img} alt="" className="w-6 h-6"/> 03 Truth</p>
-                <p className="text-sm Montserrat">We Belive in presenting facts as they are ensuring our customers make informed, confident decisions.</p>
- 
-            </div>
-     </div>
 
+      {/* Content Section */}
+      <div className="z-10 grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center max-w-4xl mt-12">
+        <p className="text-xl md:text-3xl font-semibold leading-snug text-center md:text-left">
+          Our Foundation Rests on Three ‘T’ Principles
+        </p>
+
+        <div className="space-y-6 text-start">
+          <div className="space-y-3">
+            <p className="flex items-center gap-2 text-base font-medium tracking-[0.5px]">
+              <img src={img} alt="" className="w-5 h-5" /> 01 Trust
+            </p>
+            <p className="text-sm opacity-90">
+              We build lasting relationships by keeping our promises and delivering consistent results.
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <p className="flex items-center gap-2 text-base font-medium tracking-[0.5px]">
+              <img src={img} alt="" className="w-5 h-5" /> 02 Transparency
+            </p>
+            <p className="text-sm opacity-90">
+              Every step, every detail — clear, open, and honest communication is at the heart of what we do.
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <p className="flex items-center gap-2 text-base font-medium tracking-[0.5px]">
+              <img src={img} alt="" className="w-5 h-5" /> 03 Truth
+            </p>
+            <p className="text-sm opacity-90">
+              We believe in presenting facts as they are, ensuring our customers make informed, confident decisions.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
