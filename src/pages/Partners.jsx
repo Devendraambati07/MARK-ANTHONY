@@ -22,7 +22,7 @@ const Partners = () => {
   ];
 
   return (
-    <section id="partners" className="w-full flex flex-col h-auto md:min-h-screen 2xl:min-h-0 items-center py-10 space-y-8 px-4 md:px-12" >
+    <section id="partners" className="w-full flex flex-col h-auto md:min-h-screen 2xl:min-h-0 justify-center items-center py-10 space-y-8 px-4 md:px-12" >
       {/* Header Section */}
       <div className=" space-y-4 md:max-w-6xl">
         <h1 className="text-xl md:text-4xl text-[#FFCA66] font-semibold Abril tracking-[6px]">
