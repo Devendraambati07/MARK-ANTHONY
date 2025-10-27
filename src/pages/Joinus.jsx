@@ -21,7 +21,7 @@ const Joinus =()=>{
         <h2 className="text-xl md:text-4xl text-[#FFCA66] font-semibold Abril  tracking-[6px]">
          JOIN US
         </h2>
-        <p className="text-base md:text-xl font-normal text-[#FFFFFF] mt-6 leading-12 tracking-wider">At Heart, We are People-first organization, Equally committed to our employees and customers. Guided by strong values and integrity, we go beyond advisory services to provide informed, Ethical and Enduring Real estate solutions.        </p>
+        <p className="text-base  font-normal text-[#FFFFFF] mt-6 leading-12 tracking-wider">At Heart, We are People-first organization, Equally committed to our employees and customers. Guided by strong values and integrity, we go beyond advisory services to provide informed, Ethical and Enduring Real estate solutions.        </p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-6 ">

@@ -62,7 +62,7 @@ const Navbar = () => {
                 <a
                   href={item.link}
                   onClick={(e) => handleScroll(e, item.link)}
-                  className={`text-sm leading-6 font-normal tracking-[2.25px] font-Exodus relative transition-all duration-500 p-1 Abril
+                  className={`text-sm leading-6 font-normal tracking-[1px] font-Exodus relative transition-all duration-500 p-1 Abril
                     ${
                       activeSection === item.link.slice(1)
                         ? "text-white after:w-full"

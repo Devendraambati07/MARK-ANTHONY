@@ -13,7 +13,7 @@ const About = () => {
         <h1 className="text-2xl md:text-4xl font-bold pb-6 text-[#FFCA66] Abril tracking-[6px]">
           ABOUT US
         </h1>
-        <p className="text-base md:text-xl font-normal text-[#FFFFFF] mt-6 leading-12 mb-4 tracking-wider">
+        <p className="text-base  font-normal text-[#FFFFFF] mt-6 leading-12 mb-4 tracking-wider">
           We are <span className="text-[#FFCA66] font-semibold">Mark Anthony</span> — 
           a dedicated real estate advisory firm with deep expertise in the 
           Bangalore market and an expanding footprint in Pune and Dubai.
@@ -21,12 +21,12 @@ const About = () => {
       </div>
 
       {/* Content Section */}
-      <div className="z-10 grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center max-w-4xl mt-12">
-        <p className="text-xl md:text-5xl font-semibold leading-snug text-center md:text-left tracking-wider">
-          Our Foundation Rests on Three ‘T’ Principles
+      <div className="z-10 grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center  mt-12">
+        <p className="text-xl md:text-5xl font-semibold leading-snug text-start md:text-left tracking-wider">
+          Our Foundation<br/> Rests on Three <br/> ‘T’ Principles
         </p>
 
-        <div className="space-y-6 text-start">
+        <div className="space-y-8 text-start">
           <div className="space-y-5 ">
             <p className="flex items-center gap-2 text-base font-medium tracking-[0.5px]">
               <img src={img} alt="" className="w-5 h-5" /> 01 Trust

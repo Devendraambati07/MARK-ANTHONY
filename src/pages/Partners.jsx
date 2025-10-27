@@ -28,10 +28,10 @@ const Partners = () => {
         <h1 className="text-xl md:text-4xl text-[#FFCA66] font-semibold Abril tracking-[6px]">
           PARTNERS
         </h1>
-        <p className="text-base md:text-xl font-normal text-[#FFFFFF]  text-center leading-12 mt-6  tracking-wider">
+        <p className="text-base  font-normal text-[#FFFFFF]  text-center leading-12 mt-6  tracking-wider">
           Built on Professionalism, Accountability, and Collaboration, we take pride in operating with integrity and precision—ensuring every partnership creates measurable value and mutual growth.
         </p>
-        <p className="text-base md:text-xl font-normal text-[#FFFFFF]  text-center leading-12 mt-5 tracking-wider">
+        <p className="text-base  font-normal text-[#FFFFFF]  text-center leading-12 mt-5 tracking-wider">
           We don't just execute sales we build long-term partnerships founded on trust, performance, and a shared vision of success.
         </p>
       </div>
@@ -43,7 +43,7 @@ const Partners = () => {
             key={item.id}
             src={item.image}
             alt={`Partner ${item.id}`}
-            className="w-48 md:h-36 object-contain rounded-xl hover:scale-110 transition-transform duration-300"
+            className="w-44 md:h-28 object-contain rounded-xl hover:scale-110 transition-transform duration-300"
           />
         ))}
       </div>
