@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-[#1D1D1D] max-w-[1440px] mx-auto fixed top-0 z-50 shadow-lg">
       <div className="flex items-center justify-between px-6 md:px-12 py-3">
-        <img src={Logo} alt="Mark Anthony" className="w-16 h-12" />
+        <img src={Logo} alt="Mark Anthony" className="w-16 h-16" />
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-8">
@@ -60,7 +60,7 @@ const Navbar = () => {
                 <a
                   href={item.link}
                   onClick={(e) => handleScroll(e, item.link)}
-                  className={`text-sm font-normal tracking-[2.25px] font-Exodus relative transition-all duration-500 pb-1 Abril
+                  className={`text-sm leading-6 font-normal tracking-[2.25px] font-Exodus relative transition-all duration-500 p-1 Abril
                     ${
                       activeSection === item.link.slice(1)
                         ? "text-white after:w-full"

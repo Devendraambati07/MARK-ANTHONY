@@ -22,16 +22,16 @@ const Partners = () => {
   ];
 
   return (
-    <section id="partners" className="w-full flex flex-col h-auto md:min-h-screen 2xl:min-h-0 items-center py-10 space-y-8 px-4" style={{backgroundImage:`url(${bg})`,backgroundSize: "cover", backgroundPosition:'center', width:"100%", height:"auto"}}>
+    <section id="partners" className="w-full flex flex-col h-auto md:min-h-screen 2xl:min-h-0 items-center py-10 space-y-8 px-4 md:px-12" >
       {/* Header Section */}
-      <div className="max-w-5xl text-center space-y-4">
+      <div className=" space-y-4">
         <h1 className="text-xl md:text-4xl text-[#FFCA66] font-semibold Abril tracking-[6px]">
           PARTNERS
         </h1>
-        <p className="text-base md:text-lg text-white mt-6  ">
+        <p className="text-base md:text-xl font-normal text-[#FFFFFF]  text-center leading-12 mt-6  tracking-wider">
           Built on Professionalism, Accountability, and Collaboration, we take pride in operating with integrity and precision—ensuring every partnership creates measurable value and mutual growth.
         </p>
-        <p className="text-base md:text-lg text-white mt-5">
+        <p className="text-base md:text-xl font-normal text-[#FFFFFF]  text-center leading-12 mt-5 tracking-wider">
           We don't just execute sales we build long-term partnerships founded on trust, performance, and a shared vision of success.
         </p>
       </div>
@@ -43,7 +43,7 @@ const Partners = () => {
             key={item.id}
             src={item.image}
             alt={`Partner ${item.id}`}
-            className="w-56 md:h-48 object-contain rounded-xl hover:scale-110 transition-transform duration-300"
+            className="w-48 md:h-36 object-contain rounded-xl hover:scale-110 transition-transform duration-300"
           />
         ))}
       </div>

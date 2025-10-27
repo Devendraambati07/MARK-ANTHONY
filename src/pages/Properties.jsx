@@ -29,7 +29,7 @@ const Properties = () => {
   ];
 
   return (
-    <section id="properties" className="w-full h-auto md:min-h-screen 2xl:min-h-0 bg-[#1d1d1d] text-white py-20 overflow-hidden p-4">
+    <section id="properties" className="w-full h-auto md:min-h-screen 2xl:min-h-0  text-white py-20 overflow-hidden p-4">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-xl md:text-4xl tracking-widest font-bold text-center text-[#FFCA66] mb-8  Abril">
         PROPERTIES WE WORK

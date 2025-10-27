@@ -16,12 +16,12 @@ const Joinus =()=>{
 
     return(
     <>
-    <section id="joinTheSquad" className="w-full h-auto md:min-h-screen 2xl:min-h-0 flex flex-col items-center py-10 mb-12 space-y-8 px-4">
-      <div className="max-w-5xl text-center space-y-4">
+    <section id="joinTheSquad" className="w-full h-auto md:min-h-screen 2xl:min-h-0 flex flex-col justify-center items-center py-10 mb-12 space-y-8 px-4 md:px-10">
+      <div className="w-full text-center space-y-4">
         <h2 className="text-xl md:text-4xl text-[#FFCA66] font-semibold Abril  tracking-[6px]">
          JOIN US
         </h2>
-        <p className="text-base md:text-lg text-white mt-2.5">At Heart, We are People-first organization, Equally committed to our employees and customers. Guided by strong values and integrity, we go beyond advisory services to provide informed, Ethical and Enduring Real estate solutions.        </p>
+        <p className="text-base md:text-xl font-normal text-[#FFFFFF] mt-6 leading-12 tracking-wider">At Heart, We are People-first organization, Equally committed to our employees and customers. Guided by strong values and integrity, we go beyond advisory services to provide informed, Ethical and Enduring Real estate solutions.        </p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-6 ">

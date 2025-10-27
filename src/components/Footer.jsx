@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/f
 
 const ExpressInterest = () => {
   return (
-    <div className="bg-black text-white py-16 px-12  flex flex-col md:flex-row justify-between items-start md:items-center">
+    <div className="bg-black text-white py-16 px-4 md:px-12  flex flex-col md:flex-row justify-between items-start md:items-center">
       {/* Left Side */}
       <div className="md:w-1/2 space-y-6 tracking-[2.25px]">
         <div>
@@ -29,9 +29,9 @@ const ExpressInterest = () => {
   ].map(({ Icon }, index) => (
     <div
       key={index}
-      className="border-2 border-[#FFCA66] rounded-full w-8 h-8 flex items-center justify-center cursor-pointer hover:bg-[#FFCA66] hover:text-black transition duration-300"
+      className="border-2 text-white border-white hover:border-[#FFCA66] rounded-full w-8 h-8 flex items-center justify-center cursor-pointer hover:bg-[#FFCA66] hover:text-black transition duration-300"
     >
-      <Icon className="w-4 h-4 " />
+      <Icon className="w-4 h-4  " />
     </div>
   ))}
 </div>
