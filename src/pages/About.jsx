@@ -9,20 +9,20 @@ const About = () => {
       style={{ overflow: "hidden" }}
     >
       {/* Heading Section */}
-      <div className="z-10 text-center w-full">
-        <h1 className="text-2xl md:text-4xl font-bold pb-6 text-[#FFCA66] Abril tracking-[6px]">
+      <div className="z-10 text-center md:max-w-6xl">
+        <h1 className="text-2xl  md:text-4xl font-bold pb-6 text-[#FFCA66] Abril tracking-[6px]">
           ABOUT US
         </h1>
         <p className="text-base  font-normal text-[#FFFFFF] mt-6 leading-12 mb-4 tracking-wider">
           We are <span className="text-[#FFCA66] font-semibold">Mark Anthony</span> — 
           a dedicated real estate advisory firm with deep expertise in the 
-          Bangalore market and an expanding footprint in Pune and Dubai.
+          Bangalore market <br/> and an expanding footprint in Pune and Dubai.
         </p>
       </div>
 
       {/* Content Section */}
-      <div className="z-10 grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center  mt-12">
-        <p className="text-xl md:text-5xl font-semibold leading-snug text-start md:text-left tracking-wider">
+      <div className="z-10 grid grid-cols-1 md:grid-cols-2 md:max-w-6xl gap-8 justify-center items-center  mt-12">
+        <p className="text-xl md:text-5xl  font-semibold leading-snug text-start md:text-left tracking-wider">
           Our Foundation<br/> Rests on Three <br/> ‘T’ Principles
         </p>
 

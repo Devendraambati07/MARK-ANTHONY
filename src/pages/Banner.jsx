@@ -16,12 +16,13 @@ const Banner = () => {
 
       <div className="absolute inset-0 bg-black/50"></div>
 
-      <div className="relative z-10 p-4 md:p-12 space-y-8 flex flex-col justify-center items-center md:items-start h-full">
+      <div className="relative z-10 p-4 md:ml-20 md:p-12 space-y-8 flex flex-col justify-center items-center md:items-start h-full">
         <h1 className="text-[#FFCA66] text-3xl md:text-5xl font-bold Abril tracking-[3px]">MARK ANTHONY</h1>
         <p className="text-white text-lg md:tracking-[7px]   ">WE ARE THE DIFFERENCES</p>
         <p className="text-white text-md tracking-wider">
           At Mark Anthony, Trust isn't Promised, It's Practiced
         </p>
+        
       </div>
     </section>
   );

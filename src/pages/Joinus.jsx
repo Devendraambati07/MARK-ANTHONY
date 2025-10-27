@@ -17,7 +17,7 @@ const Joinus =()=>{
     return(
     <>
     <section id="joinTheSquad" className="w-full h-auto md:min-h-screen 2xl:min-h-0 flex flex-col justify-center items-center py-10 mb-12 space-y-8 px-4 md:px-10">
-      <div className="w-full text-center space-y-4">
+      <div className="w-full md:max-w-6xl text-center space-y-4">
         <h2 className="text-xl md:text-4xl text-[#FFCA66] font-semibold Abril  tracking-[6px]">
          JOIN US
         </h2>
