@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/f
 
 const ExpressInterest = () => {
   return (
-    <div className="bg-black text-white py-16 px-4 md:px-12  flex flex-col md:flex-row justify-between items-start md:items-center">
+    <div id="contact" className="bg-black text-white py-16 px-4 md:px-12  flex flex-col md:flex-row justify-between items-start md:items-center">
       {/* Left Side */}
       <div className="md:w-1/2 space-y-6 tracking-[2.25px]">
         <div>

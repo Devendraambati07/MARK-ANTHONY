@@ -7,12 +7,13 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("Home");
 
   const menuItems = [
-    { name: "HOME", link: "#home" },
+    // { name: "HOME", link: "#home" },
     { name: "ABOUT US", link: "#about-us" },
     { name: "OUR CULTURE", link: "#ourculture" },
     { name: "PARTNERS", link: "#partners" },
     { name: "PROPERTIES", link:"#properties"},
     { name: "JOIN THE SQUAD", link: "#joinTheSquad" },
+    { name: "CONTACT", link: "#contact"}
   ];
 
   const handleScroll = (e, link) => {
@@ -50,8 +51,9 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-[#1D1D1D] max-w-[1440px] mx-auto fixed top-0 z-50 shadow-lg">
       <div className="flex items-center justify-between px-6 md:px-12 py-3">
-        <img src={Logo} alt="Mark Anthony" className="w-16 h-16" />
-
+        <a href="#home">
+                <img src={Logo} alt="Mark Anthony" className="w-auto h-12" />
+        </a>
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-8">
           <ul className="flex gap-8">
